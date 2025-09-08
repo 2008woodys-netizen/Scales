@@ -3,9 +3,12 @@ void setup() {
   noLoop(); //stops the draw() function from repeating
 }
 void draw() {
-  //your code here
+  scale(50, 50);
 }
 void scale(int x, int y) {
-  //your code here
+  pushMatrix();
+  translate(x,y);
+  rotate(PI/2);
+  bezier(0,0,45,40,60,-45,0,0);
+  popMatrix();
 }
-
